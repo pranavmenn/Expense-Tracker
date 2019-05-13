@@ -1,0 +1,27 @@
+.logCard{
+  display:flex;
+  padding:70px;
+  justify-content:center;
+}
+.logCard-1{
+
+  width:200px;
+  padding: 50px;
+}
+
+.logCard-2{
+  width:200px;
+  padding:50px;
+}
+
+.logout{
+  margin-left: auto;
+  margin-right:0;
+}
+
+@media only screen and (max-width:600px){
+  .logCard{
+    display:flex;
+    flex-direction:column;
+  }
+}
