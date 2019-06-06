@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component,Fragment } from 'react';
 import './App.css';
-import './Components/bg.css'
-import UserForm from './Components/UserForm';
+import Layout from './Components/Layout/Layout';
+import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
+
 class App extends Component{
+
   render(){
     return(
-      <div className="App">
-        <UserForm />
-      </div>
+      <ErrorBoundary render={()=><p>Something went wrong!</p>}>
+      <Fragment>
+
+          <Layout />
+      </Fragment>
+    </ErrorBoundary>
+
+
     )
   }
 }
-
 export default App;
